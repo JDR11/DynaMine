@@ -43,6 +43,9 @@ build/Release
 node_modules/
 jspm_packages/
 
+# TypeScript v1 declaration files
+typings/
+
 # Snowpack dependency directory (https://snowpack.dev/)
 web_modules/
 
@@ -92,6 +95,14 @@ out
 .nuxt
 dist
 
+# Storybook build outputs
+.out
+.storybook-out
+storybook-static
+
+# rollup.js default build output
+dist/
+
 # Gatsby files
 .cache/
 # Comment in the public line in if your project uses Gatsby and not Next.js
@@ -130,3 +141,16 @@ dist
 .yarn/install-state.gz
 .pnp.*
 
+# Temporary folders
+tmp/
+temp/
+
+### vscode ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# End of https://www.toptal.com/developers/gitignore/api/node,vscode
