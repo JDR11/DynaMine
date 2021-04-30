@@ -1,3 +1,4 @@
+/*jshint esversion: 6*/ 
 const express = require("express");
 require("dotenv").config();
 const mineflayer = require("mineflayer");
@@ -12,7 +13,7 @@ function createBot () {
     username: process.env.ACCOUNT_EMAIL,
     password: process.env.ACCOUNT_PASSWORD,
     version: false
-  })
+  });
 
   bot.on("error", err => console.log(err));
   bot.on("end", createBot);
@@ -20,7 +21,7 @@ function createBot () {
     console.log("spawned");
     sleep.sleep(600);
     console.log(bot.entity);
-  })
+  });
 }
 
-createBot()
+createBot();
