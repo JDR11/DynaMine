@@ -8,8 +8,7 @@ const sleep = require("sleep");
 
 function createBot () {
   const bot = mineflayer.createBot({
-  //  host: "192.168.8.106",
-    host: "minecraft.cabotexplorers.org.uk",
+    host: "192.168.8.106",  //My personal test server
     username: process.env.ACCOUNT_EMAIL,
     password: process.env.ACCOUNT_PASSWORD,
     version: false
