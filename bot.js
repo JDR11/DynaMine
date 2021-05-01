@@ -3,8 +3,8 @@ const express = require("express");
 require("dotenv").config();
 const mineflayer = require("mineflayer");
 const mineEntity = require("prismarine-entity");
+const mineData = require("minecraft-data")
 const Vec3 = require("vec3").Vec3;
-const sleep = require("sleep");
 
 function createBot () {
   const bot = mineflayer.createBot({
@@ -18,7 +18,7 @@ function createBot () {
   bot.on("end", createBot);
   bot.on("spawn", () => {
     console.log("spawned");
-    sleep.sleep(600);
+    console.log(bot.version);
     console.log(bot.entity);
   });
 }
