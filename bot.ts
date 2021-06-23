@@ -1,9 +1,9 @@
-/*jshint esversion: 6*/ 
+/*jshint esversion: 6*/
 const express = require("express");
 require("dotenv").config();
 const mineflayer = require("mineflayer");
 const mineEntity = require("prismarine-entity");
-const mineData = require("minecraft-data")
+const mineData = require("minecraft-data");
 const Vec3 = require("vec3").Vec3;
 
 function createBot () {
@@ -21,6 +21,6 @@ function createBot () {
     console.log(bot.version);
     console.log(bot.entity);
   });
-}
+};
 
 createBot();
