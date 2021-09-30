@@ -1,6 +1,6 @@
 const mineflayer = require("mineflayer");
-const mineEntity = require("prismarine-entity");
-const Vec3 = require("vec3").Vec3;
+//const mineEntity = require("prismarine-entity");
+//const Vec3 = require("vec3").Vec3;
 const sleep = require("sleep");
 
 function createBot () {
@@ -22,3 +22,4 @@ function createBot () {
 }
 
 createBot()
+//TEST
